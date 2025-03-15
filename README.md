@@ -32,8 +32,8 @@ returns. However, it lags behind passive investing in raw performance. Future
 enhancements could boost profitability without significantly increasing risk.
 </br>Some potential improvements:
 - Transaction Cost Considerations – Incorporating slippage and commissions to make backtests more realistic. 
-- More Computational Power – With higher processing power, we could test additional cointegration methods like Johansen and optimize pair selection further. 
-- Data Optimisation – Instead of using yearly data, we could explore rolling windows to make pair selection more adaptive. 
+- More Computational Power – With higher processing power, I could test additional cointegration methods like Johansen and use weaker correlation filtering. 
+- Data Optimisation – Instead of using yearly data, I could implement rolling windows to make pair selection more adaptive. 
 
 ### Tools Used
 - Python: pandas, yfinance, numpy, matplotlib, statsmodels (Granger cointegration test & VECM model), google.colab
