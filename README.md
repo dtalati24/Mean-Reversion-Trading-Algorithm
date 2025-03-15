@@ -1,4 +1,4 @@
-# Mean Reversion Market Neutral Trading Strategy
+# Mean Reversion Market Neutral Trading Algorthim
 
 ### Description
 My objective was to design, implement and evaluate the performance of a mean reversion market neutral trading strategy for a 1500 stock basket. This involved identifying cointegrated stock pairs, generating trading signals, and then backtesting my strategy.
