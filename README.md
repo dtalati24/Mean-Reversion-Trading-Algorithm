@@ -3,7 +3,7 @@
 ### Description
 My objective was to design, implement and evaluate the performance of a mean reversion market neutral trading strategy for a 1500 stock basket. This involved identifying cointegrated stock pairs, generating trading signals, and then backtesting my strategy.
 </br></br>
-I used yfinance to collect the stock data, specifically the daily returns (which I later converted to log returns) for the last 15 years. However, downloading the data proved to be very computationally expensive, so to improve time efficiency, I downloaded the daily returns for each stock from yfinance and stored this as a csv file. The csv file was much faster to load.
+I used yfinance to collect the stock data, specifically the daily returns (which I later converted to log returns) for the last 15 years. However, downloading the data proved to be very computationally expensive, so to improve time efficiency, I downloaded the daily returns for each stock from yfinance and stored this as a csv file. The csv file was much faster to load.</br>Dropbox Link for csv file: https://www.dropbox.com/scl/fi/r5776193mjszok9u1sel9/1500stockdata.csv?rlkey=wj0ux6k8ne2q3klv8vw3rhs35&e=1&st=mj8wyx14&dl=0
 </br></br>
 To identity conintegrated pairs, I first filtered out stock pairs based on correlation. I only kept stock pairs with a correlation between 0.9 and 0.99. I excluded extremely high correlation (e.g., GOOGL and GOOG) as this caused numerical precision issues, leading to errors in the cointegration test. Then on the filtered stock pairs, I applied the Granger test to test for cointegration. Then for significantly cointegrated stocks, I used the VECM model to calculate a linear relationship between the cointegrated stocks.
 </br></br>
